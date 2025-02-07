@@ -32,7 +32,7 @@ public class Frm_ejercicio1 extends javax.swing.JFrame {
         txtEdad = new javax.swing.JTextField();
         btnProcesar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        txtA = new javax.swing.JTextArea();
+        txtARes = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -67,9 +67,9 @@ public class Frm_ejercicio1 extends javax.swing.JFrame {
             }
         });
 
-        txtA.setColumns(20);
-        txtA.setRows(5);
-        jScrollPane1.setViewportView(txtA);
+        txtARes.setColumns(20);
+        txtARes.setRows(5);
+        jScrollPane1.setViewportView(txtARes);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -135,10 +135,13 @@ public class Frm_ejercicio1 extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNombreActionPerformed
 
     private void btnProcesarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProcesarActionPerformed
-       int num= 4;
-       String texto = "Hola este es mi primer proyecto en NetBeans";
-       txtA.setText("El numero es: "+num);
-       txtA.setText("El texto es: "+texto); 
+       String correo= txtCorreo.getText();
+       double edad= Integer.parseInt(txtEdad.getText());
+       //ESTE HACE REFERENCIA AL NOMBRE
+       String nom= txtNombre.getText();
+       txtARes.setText("El correo es : "+correo+'\n');
+       txtARes.append("La edad es: "+edad+'\n');
+       txtARes.append("El texto es: "+nom); 
        
     }//GEN-LAST:event_btnProcesarActionPerformed
 
@@ -188,7 +191,7 @@ public class Frm_ejercicio1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea txtA;
+    private javax.swing.JTextArea txtARes;
     private javax.swing.JTextField txtCorreo;
     private javax.swing.JTextField txtEdad;
     private javax.swing.JTextField txtNombre;
