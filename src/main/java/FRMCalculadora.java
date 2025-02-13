@@ -157,6 +157,10 @@ public class FRMCalculadora extends javax.swing.JFrame {
                 resultado= num1-num2;
                 break;
             case 3:
+                if(num2 == 0){
+                    JOptionPane.showMessageDialog(null, "NO SE PUEDE DIVIDIR ENTRE 0");
+                    return;
+                }
                 resultado= num1/num2;
                 break;
             case 4:
