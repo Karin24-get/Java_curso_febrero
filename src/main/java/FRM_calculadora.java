@@ -167,15 +167,15 @@ public class FRM_calculadora extends javax.swing.JFrame {
     private void btnDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDividirActionPerformed
          double num1 = Integer.parseInt(txtNum1.getText());
         double num2 = Integer.parseInt(txtNum2.getText());
-        double dividir= num1/num2;
-        txtA.setText("La resta: "+dividir);
+        double div= num1/num2;
+        txtA.setText("La resta: "+div);
     }//GEN-LAST:event_btnDividirActionPerformed
 
     private void btnMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicarActionPerformed
         double num1 = Integer.parseInt(txtNum1.getText());
         double num2 = Integer.parseInt(txtNum2.getText());
-        double multiplicacion= num1*num2;
-        txtA.setText("La multiplicacion: "+multiplicacion);
+        double mult= num1*num2;
+        txtA.setText("La multiplicacion: "+mult);
     }//GEN-LAST:event_btnMultiplicarActionPerformed
 
      
