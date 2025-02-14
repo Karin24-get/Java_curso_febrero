@@ -97,13 +97,16 @@ public class Frm_ejercicio2 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         //
-        
-        
-        
-        
-        
-        
-        
+        int numero= Integer.parseInt(txtNum1.getText());
+        if(numero>=1 && numero<=10){
+            txtA.setText("El numero esta en el rango de 1 al 10");          
+        }
+        else if(numero>11 && numero<=50){
+            txtA.setText("El numero esta en el rango de 11 al 50"); 
+        }
+        else {
+            txtA.setText("El numero esta en el rango de 51 al infinito"); 
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void txtNum1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNum1ActionPerformed
